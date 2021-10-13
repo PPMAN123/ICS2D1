@@ -17,23 +17,18 @@ rNum = random.randint(10,50)
 rNum = random.randint(0,1)
 
 #Question 10
-max = sys.maxsize
-min = -sys.maxsize - 1
-firstSum = random.randint(0, 5)
-print(firstSum)
-answerStr = input("Question 1) ")
-firstAnswerStr, secondAnswerStr = answerStr.split("+")
-firstNumber  = int(firstAnswerStr)
-secondNumber = int(secondAnswerStr)
-firstAnswer = firstNumber + secondNumber
-print(firstAnswerStr, "+", secondAnswerStr, "=", firstSum, "is", str(firstSum==firstAnswer) + ".")
+firstNumber = random.randint(0,5)
+secondNumber = random.randint(0,5)
+sum = firstNumber + secondNumber
+print("Question 1)", firstNumber, "+", secondNumber)
+userInput = int(input("= "))
+print(firstNumber, "+", secondNumber, "=", userInput, "is", str(userInput==sum) + ".")
 print()
 
-secondSum = random.randint(0, 5)
-print(secondSum)
-answerStr = input("Question 1) ")
-firstAnswerStr, secondAnswerStr = answerStr.split("+")
-firstNumber  = int(firstAnswerStr)
-secondNumber = int(secondAnswerStr)
-firstAnswer = firstNumber + secondNumber
-print(firstAnswerStr, "+", secondAnswerStr, "=", secondSum, "is", str(secondSum==firstAnswer) + ".")
+firstNumber = random.randint(0,5)
+secondNumber = random.randint(0,5)
+sum = firstNumber + secondNumber
+print("Question 2)", firstNumber, "+", secondNumber)
+userInput = int(input("= "))
+print(firstNumber, "+", secondNumber, "=", userInput, "is", str(userInput==sum) + ".")
+print()
