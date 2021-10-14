@@ -73,6 +73,12 @@ if a + b > c or a + c > b or b + c > a:
         print("That is an equilateral triangle")
     elif a == b:
         print("That is an isosceles")
+    elif b == a:
+        print("That is an isosceles")
+    elif b == c:
+        print("That is an isosceles")
+    elif a == c:
+        print("That is an isosceles")
     else: 
         print("That is a scalene triangle")
 else:
