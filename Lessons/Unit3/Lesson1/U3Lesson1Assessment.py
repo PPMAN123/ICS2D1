@@ -15,8 +15,8 @@ print()
 
 #5.
 try:
-    toContinue = "y"
-    while toContinue == "y" or toContinue == "Y":
+    toContinue = "n"
+    while toContinue == "n" or toContinue == "N":
         dependents = float(input("Enter number of dependents: "))
         income = float(input("Enter annual income ($): "))
         print()
@@ -33,6 +33,9 @@ try:
             print("ERROR: That is an invalid number of dependents. Please try again.")
         print()
         toContinue = input("Would you like to quit the program? (y/n): ")
+        if toContinue == 'y' or toContinue == 'Y':
+            print("Thank You for using my program!")
+            break
         if toContinue not in 'yYnN':
             print("ERROR: You must enter y or n")
             break
