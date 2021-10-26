@@ -39,12 +39,12 @@ try:
     for i in range(rangeNum):
         inputMessage = "Student " + str(i+1) + "'s score: "
         newScore = int(input(inputMessage))
-        if newScore > 100:
+        if newScore > 100 or newScore <= 0:
             print("ERROR: You need to enter a percentage under 100")
             break
         scores.append(newScore)
     scores.sort()
-    if newScore <= 100:
+    if newScore <= 100 or newScore >= 0:
         print("\nThe highest mark in the class is", str(scores[len(scores)-1]) + "% and the second highest score in the class is", str(scores[len(scores)-2]) + "%.")
         print()
 except ValueError:
