@@ -1,7 +1,7 @@
 # Ethan Zhou
 # ICS2O1
 # Ms Wun
-# 2021-10-25
+# 2021-10-26
 
 #2.
 i = 0
@@ -44,7 +44,9 @@ try:
             break
         scores.append(newScore)
     scores.sort()
-    if newScore <= 100 or newScore >= 0:
+    if newScore > 100 or newScore < 0:
+        print()
+    else:
         print("\nThe highest mark in the class is", str(scores[len(scores)-1]) + "% and the second highest score in the class is", str(scores[len(scores)-2]) + "%.")
         print()
 except ValueError:

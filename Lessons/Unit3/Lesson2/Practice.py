@@ -1,7 +1,7 @@
 # Ethan Zhou
 # ICS2O1
 # Ms Wun
-# 2021-10-25
+# 2021-10-26
 
 #Example 1
 number = 10
