@@ -16,3 +16,4 @@ else:
         if a % i == 0 and b % i == 0:
             gcf = i
 print(gcf)
+
