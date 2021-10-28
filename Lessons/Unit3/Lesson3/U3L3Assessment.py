@@ -51,3 +51,37 @@ while currentFloor >= 1 and currentFloor <= 10:
 print()
 
 #5.
+counter = 1
+number = 2
+while counter <= 50:
+    factors = []
+    for j in range(1,number + 1):
+        if number % j == 0:
+            factors.append(j)
+    if len(factors) <= 2:
+        print(number, "", end="")
+        counter += 1
+        if (counter - 1) % 10 == 0:
+            print()
+    number += 1
+print()
+
+#6.
+days = int(input("Enter the amount of days this month: "))
+firstDay = int(input("Enter the first day this month starts on: "))
+monthDays = []
+for i in range(days):
+    monthDays.append(i + 1)
+for i in range(firstDay):
+    monthDays.insert(0,"")
+counter = 0
+
+print(" Sun   Mon   Tue   Wed   Thu   Fri   Sat")
+for i in range(len(monthDays)):
+    counter += 1
+    if i+firstDay <= 10:
+        print( '  ', monthDays[i], '  ', end="")
+    else:
+        print( ' ', monthDays[i], ' ', end="")
+    if counter % 7 == 0:
+        print()
