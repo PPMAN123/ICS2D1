@@ -73,14 +73,14 @@ monthDays = []
 for i in range(days):
     monthDays.append(i + 1)
 for i in range(firstDay):
-    monthDays.insert(0,"")
+    monthDays.insert(0," ")
 counter = 0
 
 print(" Sun   Mon   Tue   Wed   Thu   Fri   Sat")
 for i in range(len(monthDays)):
     counter += 1
-    if i+firstDay <= 10:
-        print( '  ', monthDays[i], '  ', end="")
+    if i < firstDay or (type(monthDays) == int and monthDays[i] < 10):
+        print( ' ' + ' ' + str(monthDays[i]), ' ', end="")
     else:
         print( ' ', monthDays[i], ' ', end="")
     if counter % 7 == 0:
