@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-11T18:20:03.136Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="klTBjmV3HK6_zszJxYaK" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T18:20:46.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="2Ur20jmv-TkgwDZlHVII" version="15.7.3" type="github">
   <diagram id="IH0edRVHWNsSEsBKf5kk" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,11 +13,17 @@
         <mxCell id="nP2USRBfz_AW315EFG4I-7" value="Deposit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="nP2USRBfz_AW315EFG4I-2" target="nP2USRBfz_AW315EFG4I-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="nP2USRBfz_AW315EFG4I-9" value="withdrawal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nP2USRBfz_AW315EFG4I-2" target="nP2USRBfz_AW315EFG4I-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="nP2USRBfz_AW315EFG4I-2" value="Deposit or&lt;br&gt;withdrawal" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="70" y="130" width="140" height="80" as="geometry" />
         </mxCell>
         <mxCell id="nP2USRBfz_AW315EFG4I-6" value="Input how much&lt;br&gt;to deposit" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="75" y="250" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nP2USRBfz_AW315EFG4I-8" value="Input how much&lt;br&gt;to withdraw" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="135" width="130" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
