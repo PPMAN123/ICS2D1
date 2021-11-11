@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-11T18:08:43.226Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="IMKyRWOzvzdaLa3XqsYm" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T18:08:52.838Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="1hK-_sf8AG_INRKOATU_" version="15.7.3" type="github">
   <diagram id="OTecr7Y6tznNUYb1F1BD" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -34,7 +34,7 @@
         <mxCell id="rMgd9Rg6i_2Rd5e6uFVE-10" value="The telephone is ringing" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="305" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rMgd9Rg6i_2Rd5e6uFVE-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rMgd9Rg6i_2Rd5e6uFVE-12" target="rMgd9Rg6i_2Rd5e6uFVE-14">
+        <mxCell id="rMgd9Rg6i_2Rd5e6uFVE-15" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rMgd9Rg6i_2Rd5e6uFVE-12" target="rMgd9Rg6i_2Rd5e6uFVE-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rMgd9Rg6i_2Rd5e6uFVE-12" value="Check if alarm&lt;br&gt;clock is ringing" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
