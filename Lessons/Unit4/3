@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-11T19:10:44.910Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="ZIW9aleKsjEzlbY0SvH8" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T19:12:46.609Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="BushcaBxJS4bUBtGtf4g" version="15.7.3" type="github">
   <diagram id="H3MhB8beCB2_c-pj2SNr" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,8 +10,14 @@
         <mxCell id="rhyazoVVOus5X20kH6F3-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="30" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="rhyazoVVOus5X20kH6F3-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rhyazoVVOus5X20kH6F3-2" target="rhyazoVVOus5X20kH6F3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rhyazoVVOus5X20kH6F3-2" value="Is there more than&lt;br&gt;20 words in the &lt;br&gt;advertisement" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="150" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rhyazoVVOus5X20kH6F3-4" value="Charge $5" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="310" width="170" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
