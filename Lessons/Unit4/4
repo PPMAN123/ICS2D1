@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-11T19:30:57.990Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="wHedTHI9Qk54LpnaxGIr" version="15.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T19:33:58.199Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="odcWB5iHqNoBY12sE6l8" version="15.7.3" type="github">
   <diagram id="aflLDqw56cTRNY2z6LD6" name="Page-1">
     <mxGraphModel dx="782" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,8 +10,35 @@
         <mxCell id="I-oEnXLiOhd-AS5MhVMK-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="40" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I-oEnXLiOhd-AS5MhVMK-2" target="I-oEnXLiOhd-AS5MhVMK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="I-oEnXLiOhd-AS5MhVMK-2" value="Input two variables called X and Y" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="125" y="140" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-7" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I-oEnXLiOhd-AS5MhVMK-4" target="I-oEnXLiOhd-AS5MhVMK-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-9" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I-oEnXLiOhd-AS5MhVMK-4" target="I-oEnXLiOhd-AS5MhVMK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-4" value="Is X larger than Y?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="250" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I-oEnXLiOhd-AS5MhVMK-6" target="I-oEnXLiOhd-AS5MhVMK-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-6" value="Output X is larger than Y" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="260" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I-oEnXLiOhd-AS5MhVMK-8" target="I-oEnXLiOhd-AS5MhVMK-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-8" value="Output Y is larger than X" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="370" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I-oEnXLiOhd-AS5MhVMK-11" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
