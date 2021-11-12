@@ -36,9 +36,9 @@ print(counter, "\n")
 
 #4.
 mmddyyyy = input("Enter mm/dd/yyyy: ")
-while not mmddyyyy.strip("/").isnumeric() or len(mmddyyyy) != 10:
+while not mmddyyyy.replace("/", "").isnumeric() or len(mmddyyyy) != 10 or int(mmddyyyy[0:2].strip("0")) > 12 or int(mmddyyyy[0:2].strip("0")) < 1:
     mmddyyyy = input("Enter mm/dd/yyyy: ")
-    if mmddyyyy.strip("/").isnumeric() or len(mmddyyyy) == 10:
+    if mmddyyyy.replace("/", "").isnumeric() or len(mmddyyyy) == 10 or int(mmddyyyy[0:2].strip("0")) < 13 or int(mmddyyyy[0:2].strip("0")) > 0:
         break
 month = mmddyyyy[0:2]
 day = mmddyyyy[3:5]
