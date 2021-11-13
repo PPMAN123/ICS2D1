@@ -5,6 +5,7 @@
 
 #Question 3
 runAgain = "Y"
+#a dictionary (js object) to map out all the corresponding numbers
 phoneNumberMapping = {
     "_": '1',
     ".": "1",
@@ -36,13 +37,18 @@ phoneNumberMapping = {
     "y": "9",
     "z": "9"
 }
+#array of valid chars
 validChars = ["_", ".", "@", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 while runAgain in ["Y", "y"]:
+    #variable to check if input letters are all valid
     valid = True
+    #getting input
     phoneLetters = input("Input a telephone number expressed in letters: ").lower().replace(" ", "")
+    #checking if characters in input are all valid
     for char in phoneLetters:
         if char not in validChars:
             valid = False
+    #getting the output phone number
     if valid and len(phoneLetters) == 7:
         phoneNumber = ""
         for char in phoneLetters:
@@ -52,6 +58,7 @@ while runAgain in ["Y", "y"]:
     else:
         print("That is an invalid phone number.")
     print()
+    #algorithm to ask user if they want to use the program again
     runAgain = input("Would you like to input another telephone number? (Y/N): ")
     while runAgain not in ["Y", "y", "N", "n"]:
         runAgain = input("Would you like to input another telephone number? (Y/N): ")
