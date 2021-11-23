@@ -23,9 +23,9 @@ def whatToWear(temperature: float):
     print("Wear a t-shirt")
 
 temperature = input("Enter the temperature in fahrenheit: ")
-while not temperature.isnumeric() or not temperature.isdecimal():
+while not temperature.replace(".", "").isnumeric():
   temperature = input("Enter the temperature in fahrenheit: ")
-  if temperature.isnumeric() or temperature.isdecimal():
+  if temperature.replace(".", "").isnumeric():
     break
 whatToWear(float(temperature))
 print()
@@ -46,9 +46,9 @@ def greetings(word: str, n: int):
 
 word = input("Enter a word: ")
 n = input("Enter how many times you want to print that word: ")
-while not n.isnumeric() or not n.isdecimal():
+while not n.replace(".", "").isnumeric():
   n = input("Enter how many times you want to print that word: ")
-  if n.isnumeric() or n.isdecimal():
+  if n.replace(".", "").isnumeric():
     break
 greetings(word,int(n))
 print()
@@ -70,9 +70,9 @@ def toCelsius(fahrenheit: float):
   return ((fahrenheit-32)*5)/9
 
 fahrenheit = input("Enter the temperature in fahrenheit: ")
-while not fahrenheit.isnumeric() or not fahrenheit.isdecimal():
+while not fahrenheit.replace(".", "").isnumeric():
   fahrenheit = input("Enter the temperature in fahrenheit: ")
-  if fahrenheit.isnumeric() or fahrenheit.isdecimal():
+  if fahrenheit.replace(".", "").isnumeric():
     break
 print(fahrenheit, "fahrenheit is", toCelsius(float(fahrenheit)), "celsius")
 print()
@@ -91,24 +91,25 @@ def largestNum(firstNum: float, secondNum: float, thirdNum: float):
   >float
     the largest number out of the 3 Parameters
   """
-  numList = [firstNum, secondNum, thirdNum]
-  numList = sort(numList)
-  return round(numList[2],18)
+
+  numList = [firstNum,secondNum,thirdNum]
+  numList.sort()
+  return numList[-1]
 
 firstNum = input("Enter the first number: ")
-while not firstNum.isnumeric() or not firstNum.isdecimal():
+while not firstNum.replace(".", "").isnumeric():
   firstNum = input("Enter the first number: ")
-  if firstNum.isnumeric() or firstNum.isdecimal():
+  if firstNum.replace(".", "").isnumeric():
     break
 secondNum = input("Enter the second number: ")
-while not secondNum.isnumeric() or not secondNum.isdecimal():
+while not secondNum.replace(".", "").isnumeric():
   secondNum = input("Enter the second number: ")
-  if secondNum.isnumeric() or secondNum.isdecimal():
+  if secondNum.replace(".", "").isnumeric():
     break
 thirdNum = input("Enter the second number: ")
-while not thirdnum.isnumeric() or not thirdNum.isdecimal():
+while not thirdNum.replace(".", "").isnumeric():
   thirdNum = input("Enter the second number: ")
-  if thirdNum.isnumeric() or thirdNum.isdecimal():
+  if thirdNum.replace(".", "").isnumeric():
     break
 
 print("The largest number is", largestNum(float(firstNum), float(secondNum), float(thirdNum)))
