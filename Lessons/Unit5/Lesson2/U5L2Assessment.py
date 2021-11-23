@@ -74,4 +74,9 @@ def replaceLyrics():
     lyrics.write(accumulator)
     lyrics.close()
 
-replaceLyrics()
+print("Choose what you would like to do with the lyrics: \n1. Rewrite lyrics\n2.Replace lyrics")
+choice = input("Type 1 or 2")
+if choice == "1":
+    rewriteLyrics()
+elif choice == "2":
+    replaceLyrics()
