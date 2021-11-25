@@ -40,6 +40,7 @@ def nthChar(fileName: str, n : int):
     file = open(fileName)
     for line in file:
         print(line[n-1])
+    file.close()
 
 fileName = input("Enter the file name: ")
 n = int(input("Which letter do you want to print out: "))
