@@ -49,21 +49,24 @@ nthChar(fileName, n)
 print()
 
 #3.
-marks = open("studentMarks.txt")
-replacement = ""
-for mark in marks:
-    student = mark.split(" ")
-    grades = []
-    for individualMark in student:
-        if individualMark.strip("\n").isnumeric():
-            grades.append(int(individualMark))
-    grades.sort()
-    counter = 0
-    for i in range(2, len(grades)):
-        counter += grades[i]
-    replacement += mark.strip("\n") + " Top6Avg: " + str(round(counter/6, 1)) + "\n"
-marks.close()
+def questionThree():
+    marks = open("studentMarks.txt")
+    replacement = ""
+    for mark in marks:
+        student = mark.split(" ")
+        grades = []
+        for individualMark in student:
+            if individualMark.strip("\n").isnumeric():
+                grades.append(int(individualMark))
+        grades.sort()
+        counter = 0
+        for i in range(2, len(grades)):
+            counter += grades[i]
+        replacement += mark.strip("\n") + " Top6Avg: " + str(round(counter/6, 1)) + "\n"
+    marks.close()
 
-marks = open("studentMarks.txt", "w")
-marks.write(replacement)
-marks.close()
+    marks = open("studentMarks.txt", "w")
+    marks.write(replacement)
+    marks.close()
+
+questionThree()
