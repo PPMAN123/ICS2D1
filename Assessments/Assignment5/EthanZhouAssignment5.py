@@ -50,6 +50,15 @@ print()
 
 #3.
 def questionThree():
+    """
+    Function that has the entire algorithm of question #3
+
+    Parameters
+    >none
+
+    Returns
+    >none
+    """
     marks = open("studentMarks.txt")
     replacement = ""
     for mark in marks:
