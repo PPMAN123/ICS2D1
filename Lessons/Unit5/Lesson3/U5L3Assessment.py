@@ -130,4 +130,19 @@ print()
 
 #9.
 employeeHours = open("./hours.txt", "a")
-keepGoing = True
+keepGoing = "y"
+while keepGoing == "y":
+    employeeWorkHours = ""
+    employeeWithHours = ""
+    name = input("Enter the employee name")
+    hours = ""
+    while hours != "x":
+        hours = input("How many hours did this person work for (press x to stop entering work hours): ")
+        if hours == "x":
+            break
+        else:
+            employeeWorkHours += hours + " "
+    employeeWithHours = "\n" + name + " " + employeeWorkHours
+    employeeHours.write(employeeWithHours)
+    keepGoing = input("Do you wish to keep going? (y/n)")
+print("Thank you!\n")
