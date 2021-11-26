@@ -39,8 +39,8 @@ def nthChar(fileName: str, n : int):
 
     file = open(fileName)
     for line in file:
-        if len(line) > n:
-            print(line[n-1])
+        if len(line.strip("\n")) >= n:
+            print("Character", n, "in this line is:", line[n-1])
         else:
             print("The line is not long enough")
     file.close()
@@ -64,10 +64,13 @@ def questionThree():
     >none
     """
     marks = open("studentMarks.txt")
+    #entire file
     replacement = ""
+    #accumulator variable
     for mark in marks:
         student = mark.split(" ")
         grades = []
+        #list of marks parsed into integers
         for individualMark in student:
             if individualMark.strip("\n").isnumeric():
                 grades.append(int(individualMark))
