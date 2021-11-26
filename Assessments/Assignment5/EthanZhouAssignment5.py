@@ -39,7 +39,10 @@ def nthChar(fileName: str, n : int):
 
     file = open(fileName)
     for line in file:
-        print(line[n-1])
+        if len(line) > n:
+            print(line[n-1])
+        else:
+            print("The line is not long enough")
     file.close()
 
 fileName = input("Enter the file name: ")
@@ -52,6 +55,7 @@ print()
 def questionThree():
     """
     Function that has the entire algorithm of question #3
+    -Andrew Yao reminded me to put the question into a function
 
     Parameters
     >none
