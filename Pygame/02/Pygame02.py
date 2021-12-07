@@ -1,6 +1,7 @@
 """ 
 Show how Surface colours can be manipulated.
 """
+import time
 
 import pygame
 from pygame.locals import * 
@@ -27,7 +28,23 @@ while keep_going:
             if ev.key == K_r:
                 colour = background.get_at((0,0)) #get the colour on the background Surface
                 while colour != (255,228,225):
-                    colour = (min(colour[0]+1,255), min(colour[1]+1,255), min(colour[2]+1,255))
+                    colourR = colour[0]
+                    colourG = colour[1]
+                    colourB = colour[2]
+                    if colourR < 255:
+                        colourR += 1
+                    if colourR > 255:
+                        colourR -= 1
+                    if colourG < 228:
+                        colourG += 1
+                    if colourG > 228:
+                        colourG -= 1
+                    if colourB < 225:
+                        colourB += 1
+                    if colourB > 225:
+                        colourB -= 1
+                    colour = (colourR, colourG, colourB)
+                    time.sleep(0.001)
                     background.fill(colour) #refill the background with the new colour
                     screen.blit(background, (0, 0))
                     pygame.display.flip()
@@ -36,7 +53,23 @@ while keep_going:
             elif ev.key == K_g:    
                 colour = background.get_at((0,0)) #get the colour on the background Surface
                 while colour != (220,220,220):
-                    colour = (max(colour[0]-1,0), max(colour[1]+1,0), max(colour[2]-1,0))
+                    colourR = colour[0]
+                    colourG = colour[1]
+                    colourB = colour[2]
+                    if colourR < 220:
+                        colourR += 1
+                    if colourR > 220:
+                        colourR -= 1
+                    if colourG < 220:
+                        colourG += 1
+                    if colourG > 220:
+                        colourG -= 1
+                    if colourB < 220:
+                        colourB += 1
+                    if colourB > 220:
+                        colourB -= 1
+                    colour = (colourR, colourG, colourB)
+                    time.sleep(0.001)
                     background.fill(colour) #refill the background with the new colour
                     screen.blit(background, (0, 0))
                     pygame.display.flip()
@@ -44,7 +77,23 @@ while keep_going:
             elif ev.key == K_b:    
                 colour = background.get_at((0,0)) #get the colour on the background Surface
                 while colour != (150,205,205):
-                    colour = (max(colour[0]-1,0), max(colour[1]-1,0), max(colour[2]+1,0))
+                    colourR = colour[0]
+                    colourG = colour[1]
+                    colourB = colour[2]
+                    if colourR < 150:
+                        colourR += 1
+                    if colourR > 150:
+                        colourR -= 1
+                    if colourG < 205:
+                        colourG += 1
+                    if colourG > 205:
+                        colourG -= 1
+                    if colourB < 205:
+                        colourB += 1
+                    if colourB > 205:
+                        colourB -= 1
+                    colour = (colourR, colourG, colourB)
+                    time.sleep(0.001)
                     background.fill(colour) #refill the background with the new colour
                     screen.blit(background, (0, 0))
                     pygame.display.flip()
@@ -56,5 +105,3 @@ while keep_going:
 
     screen.blit(background, (0, 0))
     pygame.display.flip()
-    
-
