@@ -25,7 +25,7 @@ while keep_going:
     for ev in pygame.event.get():
         if ev.type == QUIT:
             keep_going = False
-    if timesLoaded % 2 == 1:
+    if timesLoaded == 1:
         if img_rect.topright[0] > 640 or img_rect.topright[1] < 0:
             moveBackTopRight = False
             img_rect.top = 0
