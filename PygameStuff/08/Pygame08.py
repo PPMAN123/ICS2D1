@@ -44,4 +44,8 @@ while keep_going:
 
     screen.blit(background, (0,0)) 
     screen.blit(img, img_rect)
+<<<<<<< Updated upstream
     pygame.display.flip()
+=======
+    pygame.display.flip()
+>>>>>>> Stashed changes
