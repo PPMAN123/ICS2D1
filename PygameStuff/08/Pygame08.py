@@ -22,10 +22,19 @@ clock = pygame.time.Clock()
 keep_going = True
 while keep_going:
     clock.tick(30)
+    #variable for all the keys being pressed down
     keys = pygame.key.get_pressed()
     for ev in pygame.event.get():
         if ev.type == QUIT:
             keep_going = False
+        #another solution
+        # if ev.type == KEYDOWN:
+        #     if ev.key == K_DOWN:
+        #         speed -= 1
+        #     elif ev.key == K_UP:
+        #         speed += 1
+    
+    #if the key being pressed down is [down], I decrease the speed, if the key is [up], I increase the speed.
     if keys[K_DOWN] and speed > 1:
         speed -= 1
     if keys[K_UP]:
@@ -35,8 +44,10 @@ while keep_going:
 
     #Handling the walls for some bounce
     if img_rect.right >= screen.get_width() or img_rect.left <= 0:
+        #if the ball hits the right or left side walls
         dir_x *= -1
     if img_rect.bottom >= screen.get_height() or img_rect.top <= 0:
+        #if the ball hits the top or bottom side walls
         dir_y *= -1
 
     #update the position

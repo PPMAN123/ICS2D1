@@ -1,5 +1,6 @@
 """ 
 Basic animation/movement of an image Surface
+copied the question 8 code
 """
 import pygame
 from pygame.locals import * 
@@ -7,6 +8,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((640, 480))
 img = pygame.image.load("ball.bmp").convert()
+#initalizes the sound
 sound = pygame.mixer.Sound("bounce.wav")
 img_rect = img.get_rect()
 img_rect.left = 1
@@ -34,9 +36,11 @@ while keep_going:
 	
     #Handling the walls for some bounce
     if img_rect.right >= screen.get_width() or img_rect.left <= 0:
+        #literally just plays the sound when the walls get touched
         sound.play()
         dir_x *= -1
     if img_rect.bottom >= screen.get_height() or img_rect.top <= 0:
+        #literally just plays the sound when the walls get touched
         sound.play()
         dir_y *= -1
 

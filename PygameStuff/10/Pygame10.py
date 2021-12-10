@@ -7,6 +7,7 @@ from pygame.locals import *
 import random
 pygame.init()
 class Ball(pygame.sprite.Sprite):
+    #made init function take in another variable for basketballs
     def __init__(self, imageLink):
         pygame.sprite.Sprite.__init__(self) #construct the parent component
         self.image = pygame.image.load(imageLink).convert()
@@ -32,6 +33,8 @@ class Ball(pygame.sprite.Sprite):
         self.speed += delta
         
 screen = pygame.display.set_mode((640, 480))
+
+#initializing 2 balls
 ball = Ball("soccerball.bmp")
 secondBall = Ball("basketball.jpg")
 
@@ -60,5 +63,6 @@ while keep_going:
     secondBall.update()
     screen.blit(background, (0,0))
     screen.blit(ball.image, ball.rect)
+    #blitting another ball
     screen.blit(secondBall.image, secondBall.rect)
     pygame.display.flip()

@@ -1,5 +1,6 @@
 """ 
 Testing out Fonts
+Copy this code and change the label from Ethan to your name, and change the SysFont in line 15 to something else
 """
 import pygame
 from pygame.locals import * 
@@ -18,8 +19,8 @@ my_font2.set_bold(True)
 my_font2.set_underline(True)
 my_font2.set_italic(True)
 
-label = my_font.render("Pygame!", False, (255,0,0))
-label2 = my_font2.render("Pygame!", True, (0,0, 255))
+label = my_font.render("Ethan", False, (255,0,0))
+label2 = my_font2.render("Ethan", True, (0,0, 255))
 screen.blit(background, (0,0))
 screen.blit(label, (60, 20))
 screen.blit(label2, (60, 80))
