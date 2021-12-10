@@ -44,14 +44,19 @@ class Block(pygame.sprite.Sprite):
 screen = pygame.display.set_mode((640, 480))
 
 #make 8 balls and put them in a group called ball_group
-
+ball_group = pygame.sprite.Group()
+for i in range(8):
+    ball_group.add(Ball())
 
 
 
 
 
 #make 1000 blocks in random colours and a separate group for them called block_group
-
+block_group = pygame.sprite.Group()
+for i in range(1000):
+    colour = (random.randint(0,255), random.randint(0,255), random.randint(0,255))
+    block_group.add(Block(colour))
 
 
 
@@ -72,16 +77,15 @@ while keep_going:
 
             
     #for every ball in the group, check for collisions, killing the blocks hit
-
+    pygame.sprite.groupcollide(ball_group, block_group, False, True)
 
 
 
         
     
     #stop the loop when all the blocks are gone
-
-
-
+    if len(block_group) == 0:
+        keep_going = False
 
 
             
