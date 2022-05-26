@@ -47,17 +47,6 @@ class Block(pygame.sprite.Sprite):
             if not self.rect.bottomright[0] + 120 >= screen.get_width():
                 self.rect.left += 120
 
-# if screen.get_at((0,0)) == (0,255,255):
-#     playlist = list()
-#     playlist.append('speech.wav')
-#     playlist.append('speech.wav')
-
-#     pygame.mixer.music.load(playlist.pop())
-#     pygame.mixer.music.queue(playlist.pop())
-#     pygame.mixer.music.play(-1)
-# else:
-#     pygame.mixer.music.stop()
-
 def main_menu():
     keep_going = True
     global game_status
